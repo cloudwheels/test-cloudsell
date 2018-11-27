@@ -63,7 +63,17 @@ Try running a command now:
 echo "Hello Cloud Shell"
 ```
 
+Display the web preview icon <walkthrough-web-preview-icon></walkthrough-web-preview-icon> by including this in your tutorial’s Markdown:
 
+    <walkthrough-web-preview-icon>
+    </walkthrough-web-preview-icon>
+
+To create a link that shines a <walkthrough-spotlight-pointer spotlightId="devshell-web-preview-button">spotlight on the web preview icon</walkthrough-spotlight-pointer>, add the following:
+
+    <walkthrough-spotlight-pointer
+        spotlightId="devshell-web-preview-button">
+      spotlight on the web preview icon
+    </walkthrough-spotlight-pointer>
 
 
 
