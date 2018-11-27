@@ -43,12 +43,35 @@ We'll also set up a Cloudant database service and update the code so we can use 
 
 ``` 
 code code 
+<img src="img/613d411c692f5f58.png" alt="613d411c692f5f58.png"  width="329.79" />
+//comment
+```
 
+#### source.ts
+``` 
+//big long  the copy button on the side of the code box and paste the command in the Cloud Shell term
+{
+"this": "that",
+"num": 4
+}
+```
+
+Try running a command now:
+```bash
+echo "Hello Cloud Shell"
 ```
 
 
-## Why use IBM Cloud?
 
+
+
+
+**Tip**: Click the copy button on the side of the code box and paste the command in the Cloud Shell terminal to run it.
+
+
+
+
+## Why use IBM Cloud?
 
 
 LoopBack apps can be hosted in any  [Node.js](https://nodejs.org/) environment and connect to a wide variety of data  sources. 
@@ -60,6 +83,19 @@ All you really need is an email address to confirm your registration, a first an
 That'll get us 256MB of memory on IBM's  [Cloud Foundry](https://www.cloudfoundry.org/the-foundry/ibm-cloud-foundry/) platform, where we'll set up a vanilla  [Node.js](https://nodejs.org/) instance for deploying our LoopStore app to the cloud.
 
 As a big bonus, our IBM id gives us access to the  [Cloudant](https://www.ibm.com/cloud/cloudant) database service. We can connect to all sorts of backend data services through LoopBack's  [DataSources](https://loopback.io/doc/en/lb4/DataSources.html). Cloudant is a distributed, non-relational document database (a bit like  [MongoDB](https://www.mongodb.com/)), which suits storing data for our LoopBack  [Models](https://loopback.io/doc/en/lb4/Model.html) well. 
+
+
+## Congratulations
+
+<walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
+
+You’re all set!
+
+You can now filter and format to your heart’s content. Read the help of `gcloud topic filters` and `gcloud topic formats` for a detailed look at what these flags can do.
+
+**Don’t forget to clean up after yourself**: If you created test projects, be sure to delete them to avoid unnecessary charges. Use `gcloud projects delete <PROJECT-ID>`.
+
+
 
 
 ## Sign up for IBM Cloud and login to the console
