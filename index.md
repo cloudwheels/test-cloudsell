@@ -35,6 +35,16 @@ We'll also set up a Cloudant database service and update the code so we can use 
                                text="Spotlight web preview">
 </walkthrough-spotlight-pointer>
 
+``` npm run ```
+
+
+`code or no`
+
+
+``` 
+code code 
+
+```
 
 
 ## Why use IBM Cloud?
