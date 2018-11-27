@@ -26,8 +26,8 @@ We'll also set up a Cloudant database service and update the code so we can use 
 
 ```<code snippet>```
 
-<walkthrough-editor-spotlight spotlightId="navigator" filePath="test.md" text="My file">
-</walkthrough-editor-spotlight>
+<walkthrough-editor-open-file  filePath="test.md" text="Open test.md">
+</walkthrough-editor-open-file>
 
 
 
