@@ -24,10 +24,16 @@ We'll install and configure the IBM Cloud CLI for deploying our app..
 
 We'll also set up a Cloudant database service and update the code so we can use it to persist data for our  [Models](https://loopback.io/doc/en/lb4/Model.html). 
 
-```<code snippet>```
+```npm serve```
 
 <walkthrough-editor-open-file  filePath="test-cloudshell-tutorial/test.md" text="Open test.md">
 </walkthrough-editor-open-file>
+
+<walkthrough-editor-spotlight spotlightId="navigator" filePath="test.md" text="Spotight File"></walkthrough-editor-spotlight>
+
+<walkthrough-spotlight-pointer spotlightId="devshell-web-preview-button"
+                               text="Spotlight web preview">
+</walkthrough-spotlight-pointer>
 
 
 
