@@ -1,0 +1,34 @@
+{
+  "environment": "web",
+  "source": "1JFuG_LgXHcF8Rx-RfBG_NE1YJ5G8wWPV8Zs6ZFZBnik",
+  "format": "md",
+  "prefix": "../../",
+  "mainga": "UA-49880327-14",
+  "updated": "2018-11-27T16:54:59Z",
+  "id": "get-started-google-cloud-shell",
+  "duration": 0,
+  "title": "Get Started using Google Cloud Shell",
+  "author": "LoopStore",
+  "summary": "In this how-to we'll find out how to set up a development environment for our LoopStore purely in the cloud. You can then follow the tutorial from with the Cloud Shell.",
+  "theme": "loopback",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "LoopBack",
+    "Google Cloud Shell"
+  ],
+  "tags": [
+    "cloudant",
+    "google cloud shell",
+    "graphql",
+    "ibm cloud",
+    "loopback",
+    "loopstore",
+    "node",
+    "openapi",
+    "rest"
+  ],
+  "feedback": "https://github.com/loopstore/loopstore-tutorial-v4/issues",
+  "url": "get-started-google-cloud-shell"
+}
