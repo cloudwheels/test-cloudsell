@@ -29,7 +29,7 @@ We'll also set up a Cloudant database service and update the code so we can use 
 <walkthrough-editor-open-file  filePath="test-cloudshell-tutorial/test.md" text="Open test.md">
 </walkthrough-editor-open-file>
 
-<walkthrough-editor-spotlight spotlightId="navigator" filePath="test.md" text="Spotight File"></walkthrough-editor-spotlight>
+<walkthrough-editor-spotlight spotlightId="navigator" filePath="test-cloudshell-tutorial/test.md" text="Spotight File"></walkthrough-editor-spotlight>
 
 <walkthrough-spotlight-pointer spotlightId="devshell-web-preview-button"
                                text="Spotlight web preview">
