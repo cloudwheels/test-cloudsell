@@ -45,26 +45,19 @@ You're running Node.js in a unix environment. In the tutorial **Reference Sectio
     npm i -g @loopback/cli
 
 #### Start the app generator using the "lb4 app" command
-
 [see all CLI options](https://github.com/strongloop/loopback-next/blob/master/packages/cli/README.md)
 
     lb4 app
 
-#### For **Project name** enter "**loopstore"**
-
-?Project name
+#### For "Project name" enter "loopstore"
 
     loopstore
 
-#### For **Project description** enter "**Building a store with LoopBack 4"**
-
-?Project description
+#### For Project description enter "Building a store with LoopBack 4"
 
     Building a store with LoopBack 4
 
-For **Project root directory** enter **loopstore**
-
-? Project root directory
+#### For "Project root directory" enter "loopstore"
 
     loopstore
 
@@ -79,42 +72,30 @@ This is the name of the directory which will be created below your current worki
 
 You can't enter a path here: see  [this Issue](https://github.com/strongloop/loopback-next/issues/2092).
 
-For **Application class name** enter **LoopstoreApplication**
-
-? Application class name
+#### For "Application class name" enter "LoopstoreApplication"
 
     LoopstoreApplication
 
 #### Leave all the features enabled
 
-Leave all the features enabled
+####  <img src="https://lh4.googleusercontent.com/trfPp4bSfwqf4wKEwqrA6Q882dV3R3SW9WrAXNUKn3TEuURJVjeQH9Fw-rUf5aeth9S9NQ54oQNdBlA2pJRxZt28wqlXi9xBm0E45rx5Q-0p05dIDnOUyiF7Wpyvod6Hb4zHlegG" alt="trfPp4bSfwqf4wKEwqrA6Q882dV3R3SW9WrAXNUKn3TEuURJVjeQH9Fw-rUf5aeth9S9NQ54oQNdBlA2pJRxZt28wqlXi9xBm0E45rx5Q-0p05dIDnOUyiF7Wpyvod6Hb4zHlegG"  width="624.00" />
 
-? Select features to enable in the project (Press <space> to select, <a> to toggle all, <i> to invert selection)
-❯◉ Enable tslint
- ◉ Enable prettier
- ◉ Enable mocha
- ◉ Enable loopbackBuild
- ◉ Enable vscode
- ◉ Enable repositories
- ◉ Enable services
+<aside class="special">
+
+**Going deeper**
+
+We'll be looking into what these all mean later in the tutorial.
+</aside>
 
 #### Generate the LoopStore app
 
 After a few seconds, the code for the LoopStore app should be generated in in a subfolder called loopstore.
 
-Application loopstore was created in loopstore.
-
-Next steps:
-
-$ cd loopstore
-
-$ npm start
-
 #### Change into the app code directory using "cd loopstore"
 
     cd loopstore
 
-#### Build a run the loopstore using "npm start"
+#### Build a run the LoopStore app using "npm start"
 
     npm start
 
