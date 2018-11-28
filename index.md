@@ -35,6 +35,8 @@ Install the cli
 
     lb4 app
 
+`Name of your application`
+
 ```
 Name of your application
 ```
