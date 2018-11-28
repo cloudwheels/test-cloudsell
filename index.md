@@ -68,7 +68,7 @@ You're running Node.js in a unix environment. In the tutorial **Reference Sectio
 This is the name of the directory which will be created below your current working directory to store our LoopStore's code package. This will also be the package name contained in the app package.json file.
 </aside>
 
-**Caution**
+**Caution!**
 
 You can't enter a path here: see  [this Issue](https://github.com/strongloop/loopback-next/issues/2092).
 
@@ -78,16 +78,18 @@ You can't enter a path here: see  [this Issue](https://github.com/strongloop/loo
 
 #### Leave all the features enabled
 
-####  <img src="https://lh4.googleusercontent.com/trfPp4bSfwqf4wKEwqrA6Q882dV3R3SW9WrAXNUKn3TEuURJVjeQH9Fw-rUf5aeth9S9NQ54oQNdBlA2pJRxZt28wqlXi9xBm0E45rx5Q-0p05dIDnOUyiF7Wpyvod6Hb4zHlegG" alt="trfPp4bSfwqf4wKEwqrA6Q882dV3R3SW9WrAXNUKn3TEuURJVjeQH9Fw-rUf5aeth9S9NQ54oQNdBlA2pJRxZt28wqlXi9xBm0E45rx5Q-0p05dIDnOUyiF7Wpyvod6Hb4zHlegG"  width="624.00" />
-
 <aside class="special">
 
-**Going deeper**
+**Going deeper 🤓**
+
+Here's what we enabled: tslint, prettier, Eable mocha, loopbackBuild, vscode, repositories, services.
 
 We'll be looking into what these all mean later in the tutorial.
 </aside>
 
 #### Generate the LoopStore app
+
+**Hit Enter to create the LoopStore!**
 
 After a few seconds, the code for the LoopStore app should be generated in in a subfolder called loopstore.
 
@@ -99,17 +101,56 @@ After a few seconds, the code for the LoopStore app should be generated in in a 
 
     npm start
 
-### Going deeper
+NPM will run the build scripts in the package.json file
+
+NPM will run the build scripts in the <walkthrough-editor-open-file  filePath="test-cloudshell-tutorial/loopstore/package.json" text="package.json"></walkthrough-editor-open-file> file
+
+NPM will run the build scripts in the <walkthrough-editor-open-file  filePath="test-cloudshell-tutorial/loopstore/package.json" text="">package.json</walkthrough-editor-open-file> file
+
+```
+> loopstore@1.0.0 prestart /home/nigel/test-cloudshell-tutorial/loopstore
+> npm run build
+> loopstore@1.0.0 build /home/nigel/test-cloudshell-tutorial/loopstore
+> lb-tsc es2017 --outDir dist> loopstore@1.0.0 start /home/nigel/test-cloudshell-tutorial/loopstore
+
+> node .Server is running at http://127.0.0.1:3000
+Try http://127.0.0.1:3000/ping
+```
+
+    > loopstore@1.0.0 prestart /home/nigel/test-cloudshell-tutorial/loopstore
+    > npm run build
+    > loopstore@1.0.0 build /home/nigel/test-cloudshell-tutorial/loopstore
+    > lb-tsc es2017 --outDir dist> loopstore@1.0.0 start /home/nigel/test-cloudshell-tutorial/loopstore
+    
+    > node .Server is running at http://127.0.0.1:3000
+    Try http://127.0.0.1:3000/ping
+
+> loopstore@1.0.0 prestart /home/nigel/test-cloudshell-tutorial/loopstore
+
+> npm run build
+
+> loopstore@1.0.0 build /home/nigel/test-cloudshell-tutorial/loopstore
+
+> lb-tsc es2017 --outDir dist> loopstore@1.0.0 start /home/nigel/test-cloudshell-tutorial/loopstore
+
+> node .Server is running at [http://127.0.0.1:3000](http://127.0.0.1:3000)
+
+Try [http://127.0.0.1:3000/ping](http://127.0.0.1:3000/ping)
+
+<aside class="special">
+
+**Going deeper**
+
+If you look closely the **npm start** script actually runs a **prestart** script, which runs the **build **script before finally serving the app. We'll have to change some of these settings and look deeper into the LoopBack **Build **package later.
+</aside>
+
+#### That's it!
+
+Our LoopStore is up and running! (kind of). It's pretty unlikely you won't have checked out those links in the browser yet but we'll be having a look at what exactly we've created and how it works next up...
 
 ### Frequently Asked Questions
 
 *  [LoopBack 4 Issues on GitHub](https://github.com/strongloop/loopback-next/issues)
-
-<walkthrough-editor-open-file  filePath="test-cloudshell-tutorial/test.md" text="Open test.md"></walkthrough-editor-open-file>
-
-<walkthrough-spotlight-pointer spotlightId="devshell-web-preview-button" text="Spotlight web preview"></walkthrough-spotlight-pointer>
-
-<walkthrough-editor-spotlight spotlightId="navigator" filePath="hello.md" text="My file"></walkthrough-editor-spotlight>
 
 
 ## Deploying our LoopStore to IBM Cloud Free Tier
