@@ -34,31 +34,39 @@ You're running Node.js in a unix environment. In the tutorial **Reference Sectio
 
 * **How to:** check your  [Node.js](https://nodejs.org) environment supports  [LoopBack 4](https://v4.loopback.io/)
 * **How to**: install the  [LoopBack 4](https://v4.loopback.io/) CLI
-* **How to**: create  
-* How to use the GCP Container Registry Service
-* How Containers differ from Virtual machines
+* **How to**: create a  [LoopBack 4](https://v4.loopback.io/) Application using the CLI Generator
+* **How to**: Build and run the app
+* **Key Concepts**: CLI, Application, Generator, Build
+
+### Instructions
 
 #### Install the  [LoopBack 4](https://v4.loopback.io/) CLI  [npm package](https://www.npmjs.com/package/@loopback/cli)
 
     npm i -g @loopback/cli
 
-#### Start the app generator using
+#### Start the app generator using the "lb4 app" command
 
 [see all CLI options](https://github.com/strongloop/loopback-next/blob/master/packages/cli/README.md)
 
     lb4 app
 
-#### For **Project name** enter **loopstore**
+#### For **Project name** enter "**loopstore"**
+
+?Project name
 
     loopstore
 
-#### For **Description** enter **A store built with LoopBack 4**
+#### For **Project description** enter "**Building a store with LoopBack 4"**
 
-    Build a store with LoopBack 4
+?Project description
 
-#### For **project directory** enter **loopstore**
+    Building a store with LoopBack 4
 
-loopstore
+For **Project root directory** enter **loopstore**
+
+? Project root directory
+
+    loopstore
 
 <aside class="special">
 
@@ -67,7 +75,52 @@ loopstore
 This is the name of the directory which will be created below your current working directory to store our LoopStore's code package. This will also be the package name contained in the app package.json file.
 </aside>
 
-#### Frequently Asked Questions
+**Caution**
+
+You can't enter a path here: see  [this Issue](https://github.com/strongloop/loopback-next/issues/2092).
+
+For **Application class name** enter **LoopstoreApplication**
+
+? Application class name
+
+    LoopstoreApplication
+
+#### Leave all the features enabled
+
+Leave all the features enabled
+
+? Select features to enable in the project (Press <space> to select, <a> to toggle all, <i> to invert selection)
+❯◉ Enable tslint
+ ◉ Enable prettier
+ ◉ Enable mocha
+ ◉ Enable loopbackBuild
+ ◉ Enable vscode
+ ◉ Enable repositories
+ ◉ Enable services
+
+#### Generate the LoopStore app
+
+After a few seconds, the code for the LoopStore app should be generated in in a subfolder called loopstore.
+
+Application loopstore was created in loopstore.
+
+Next steps:
+
+$ cd loopstore
+
+$ npm start
+
+#### Change into the app code directory using "cd loopstore"
+
+    cd loopstore
+
+#### Build a run the loopstore using "npm start"
+
+    npm start
+
+### Going deeper
+
+### Frequently Asked Questions
 
 *  [LoopBack 4 Issues on GitHub](https://github.com/strongloop/loopback-next/issues)
 
