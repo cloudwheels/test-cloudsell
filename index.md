@@ -15,75 +15,71 @@ feedback link: https://github.com/loopstore/loopstore-tutorial-v4/issues
 
 
 ## Introduction
+Duration: 02:00
 
 
+    adb shell am start -a android.intent.action.VIEW \
+    -d "http://recipe-app.com/recipe/pierogi-poutine" com.recipe_app
 
-In this HOW-TO section we'll be creating a free tier IBM Cloud account and setting up Cloud Foundry app instance for deploying our LoopStore.
+### What you'll learn
+
+* How to write a Dockerfile
+* How to build a container
+* How to run a container
+* How to use the GCP Container Registry Service
+* How Containers differ from Virtual machines
+
+### What you'll learn
+
+* One
+* Two
+
+### What we've covered
+
+* One
+* Two
+
+In this HOW-TO sWhatection we'll be creating a free tier IBM Cloud account and setting up Cloud Foundry app instance for deploying our LoopStore.
 
 We'll install and configure the IBM Cloud CLI for deploying our app..
 
 We'll also set up a Cloudant database service and update the code so we can use it to persist data for our  [Models](https://loopback.io/doc/en/lb4/Model.html). 
 
-```npm serve```
+#### Frequently Asked Questions
 
-<walkthrough-editor-open-file  filePath="test-cloudshell-tutorial/test.md" text="Open test.md">
-</walkthrough-editor-open-file>
+*  [How do I install Android Studio?](https://developer.android.com/sdk/installing/studio.html)
+*  [How do I enable USB debugging?](http://developer.android.com/tools/device.html)
+*  [Why doesn't Android Studio see my device?](http://stackoverflow.com/a/16598454)
+*  [Android error: Failed to install *.apk on device *: timeout?](http://stackoverflow.com/a/4786299)
 
+    shoulbe like -code withcopy 
 
+#### index.html
 
-<walkthrough-spotlight-pointer spotlightId="devshell-web-preview-button"
-                               text="Spotlight web preview">
-</walkthrough-spotlight-pointer>
-
-``` npm run ```
-
-<walkthrough-editor-spotlight spotlightId="navigator" filePath="test-cloudshell-tutorial/test.md" text="Spotight File"></walkthrough-editor-spotlight>
-
-
-`code or no`
-
-
-``` 
-code code 
-<img src="img/613d411c692f5f58.png" alt="613d411c692f5f58.png"  width="329.79" />
-//comment
+```
+<activity android:name="com.recipe_app.client.RecipeActivity"
+         android:label="@string/title_gizmos" >
+   <intent-filter android:label="@string/filter_title_viewrecipe">
+       <action android:name="android.intent.action.VIEW" />
+       <!-- URIs that begin with "http://recipe-app.com/recipe" -->
+       <data android:scheme="http"
+             android:host="recipe-app.com"
+             android:pathPrefix="/recipe" />
+       <category android:name="android.intent.category.DEFAULT" />
+       <category android:name="android.intent.category.BROWSABLE" />
+   </intent-filter>
+</activity>
 ```
 
-#### source.ts
-``` 
-//big long  the copy button on the side of the code box and paste the command in the Cloud Shell term
-{
-"this": "that",
-"num": 4
-}
-```
+<walkthrough-editor-open-file  filePath="test-cloudshell-tutorial/test.md" text="Open test.md"></walkthrough-editor-open-file>
 
-Try running a command now:
-```bash
-echo "Hello Cloud Shell"
-```
+<walkthrough-spotlight-pointer spotlightId="devshell-web-preview-button" text="Spotlight web preview"></walkthrough-spotlight-pointer>
 
-Display the web preview icon <walkthrough-web-preview-icon></walkthrough-web-preview-icon> by including this in your tutorial’s Markdown:
-
-    <walkthrough-web-preview-icon>
-    </walkthrough-web-preview-icon>
-
-To create a link that shines a <walkthrough-spotlight-pointer spotlightId="devshell-web-preview-button">spotlight on the web preview icon</walkthrough-spotlight-pointer>, add the following:
-
-    <walkthrough-spotlight-pointer
-        spotlightId="devshell-web-preview-button">
-      spotlight on the web preview icon
-    </walkthrough-spotlight-pointer>
-
-
-
-
-**Tip**: Click the copy button on the side of the code box and paste the command in the Cloud Shell terminal to run it.
-
-
+<walkthrough-editor-spotlight spotlightId="navigator" filePath="hello.md" text="My file"></walkthrough-editor-spotlight>
 
 
 ## Why use IBM Cloud?
+
 
 
 LoopBack apps can be hosted in any  [Node.js](https://nodejs.org/) environment and connect to a wide variety of data  sources. 
@@ -95,78 +91,5 @@ All you really need is an email address to confirm your registration, a first an
 That'll get us 256MB of memory on IBM's  [Cloud Foundry](https://www.cloudfoundry.org/the-foundry/ibm-cloud-foundry/) platform, where we'll set up a vanilla  [Node.js](https://nodejs.org/) instance for deploying our LoopStore app to the cloud.
 
 As a big bonus, our IBM id gives us access to the  [Cloudant](https://www.ibm.com/cloud/cloudant) database service. We can connect to all sorts of backend data services through LoopBack's  [DataSources](https://loopback.io/doc/en/lb4/DataSources.html). Cloudant is a distributed, non-relational document database (a bit like  [MongoDB](https://www.mongodb.com/)), which suits storing data for our LoopBack  [Models](https://loopback.io/doc/en/lb4/Model.html) well. 
-
-
-## Congratulations
-
-<walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
-
-You’re all set!
-
-You can now filter and format to your heart’s content. Read the help of `gcloud topic filters` and `gcloud topic formats` for a detailed look at what these flags can do.
-
-**Don’t forget to clean up after yourself**: If you created test projects, be sure to delete them to avoid unnecessary charges. Use `gcloud projects delete <PROJECT-ID>`.
-
-
-
-
-## Sign up for IBM Cloud and login to the console
-
-
-
-Fill in your email, name, region  [IBM Cloud signup page](https://console.bluemix.net/registration/) and once you've responded to the confirmation email and logged in you should end up with a lovely welcome message.
-
-<img src="img/613d411c692f5f58.png" alt="613d411c692f5f58.png"  width="329.79" />
-
-**Welcome to IBM Cloud!**
-
-Note that the welcome message tells you that your account is all set up with a:
-
-* **resource group**;
-* **org**, and;
-* **space**
-
-You'll need to know some of these to configure the CLI. 
-
-Once you've dismissed this message, you'll find yourself on your  [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps).
-
-Wondering why the console (and soon our LoopStore) are hosted at bluemix.net? - IBM Cloud  [changed its name from Bluemix in 2017](https://www.ibm.com/blogs/bluemix/2017/10/bluemix-is-now-ibm-cloud/)
-
-You can see from the dropdowns at the top of the Dashboard that your **organisation** has been created using your **email address**, and there is a single **space **called **dev.**
-
-**These are the default settings that will be used when you create your Cloud Foundry app you will need them to configure the CLI.**
-
-<img src="img/403dddc323230c7a.png" alt="403dddc323230c7a.png"  width="435.50" />
-
-<img src="img/35939c0267482b1d.png" alt="35939c0267482b1d.png"  width="437.82" />
-
-Hit the hamburger top-left and you'll meet the side menu that allows you to find your way around the vast IBM Cloud platform.
-
-<img src="img/b2faf974cb3b5bad.png" alt="b2faf974cb3b5bad.png"  width="276.92" />
-
-
-## Configure the DataSource in data.db to use loopback-connector-cloudant
-
-
-
-
-## Deploy LoopStore to the cloud!
-
-
-
-
-## Test your deployment
-
-
-
-
-## Setting up a local Cloudant database
-
-
-
-
-## Considerations for production deployment
-
-
 
 
